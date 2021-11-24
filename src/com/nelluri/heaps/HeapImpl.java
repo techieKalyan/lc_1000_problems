@@ -16,6 +16,11 @@ class HeapImpl {
 
     }
 
+    public HeapImpl(int[] input) {
+        this.elements = input;
+        size = input.length;
+    }
+
     public int length() {
         return size;
     }
@@ -101,8 +106,18 @@ class HeapImpl {
         return -1;
     }
 
+    /*
+    Converts given input array to Min Heap
+     */
+   public void heapify() {
+        for(int i = size/2; i >= 0; i--) {
+            percolateDown(i);
+        }
+   }
+
     public static void main(String[] args) {
         // starter code will be here.
+        /*
         HeapImpl heap= new HeapImpl();
         heap.addElement(5);
         heap.addElement(20);
@@ -116,5 +131,11 @@ class HeapImpl {
 
         int deletedElement = heap.removeElement();
         heap.printHeap();
+        */
+
+        int[] input = new int[]{5,20,30,40,50,28,27,60};
+        HeapImpl heap2 = new HeapImpl(input);
+        heap2.heapify();
+        heap2.printHeap();
     }
 }
