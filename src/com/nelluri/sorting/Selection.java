@@ -10,11 +10,14 @@ Otherwise worst case complexity if O(n2), avg case is O(nlogn)
 public class Selection {
 
     private void quickSelect(int[] input, int start, int stop, int k) {
+        // stop the recursion in this case
         if(stop <= start) {
             return;
         }
         int begin = start;
         int end = stop;
+
+        // choosing pivot element as first element.
         int pivot = input[start];
 
         while(begin < end) {
