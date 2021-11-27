@@ -28,7 +28,7 @@ class HeapImpl {
 
     public void printHeap() {
         for(int i=0; i < size; i++) {
-            System.out.println(elements[i] + "\t");
+            System.out.print(elements[i] + "\t");
         }
     }
 
