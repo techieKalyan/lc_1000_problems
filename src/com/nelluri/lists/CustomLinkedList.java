@@ -5,7 +5,7 @@ public class CustomLinkedList {
     /*
     Structure of the linked list node.
      */
-    private static class Node {
+    static class Node {
         int data;
         Node next;
         Node(int data, Node next) {

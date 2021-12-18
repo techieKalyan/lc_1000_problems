@@ -12,7 +12,7 @@ public class GraphAL {
         Edge class represents the edge between src node and dest code and also
         captures the cost of the edge.
      */
-    private static class Edge {
+    static class Edge {
         int dest;
         int cost;
         Edge(int dest,int cost) {
@@ -31,6 +31,10 @@ public class GraphAL {
         for(int i=0; i < this.nodes ; i++) {
             this.adjList.add(new LinkedList<Edge>());
         }
+    }
+
+    public int getNodes() {
+        return nodes;
     }
 
     public void addDirectedEdge(int src, int dest, int cost) {
