@@ -3,6 +3,7 @@ package com.nelluri.arrays;
 /*
 
 Compute the rain water that gets trapped between the buildings.
+https://www.udemy.com/course/cpp-data-structures-algorithms-levelup-prateek-narang/learn/lecture/25192002#overview
 
 
  */
