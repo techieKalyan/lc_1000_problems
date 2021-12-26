@@ -2,9 +2,9 @@ package com.nelluri.trees;
 
 public class Tree {
     Node root;
-     static class Node {
-        int data;
-        Node left, right;
+     public static class Node {
+        public int data;
+        public Node left, right;
         Node(int val) {
             this.data = val;
             this.left = this.right = null;

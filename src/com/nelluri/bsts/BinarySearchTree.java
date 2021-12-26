@@ -1,4 +1,4 @@
-package com.nelluri.trees;
+package com.nelluri.bsts;
 
 public class BinarySearchTree {
 
