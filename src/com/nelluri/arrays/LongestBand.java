@@ -6,6 +6,9 @@ Given an array, find length of longest band.
 band contains elements which are consecutive.
 https://www.udemy.com/course/cpp-data-structures-algorithms-levelup-prateek-narang/learn/lecture/24429162#announcements
 
+Band is defined as a subsequence of elements in array which can be reordered
+such that all elements appear consecutive.( absolute difference of 1 between neighbourig elements)
+
 Algo:
 1. Identify the starting element of the band.
 2. Lookup whether consecutive elements are present in the array or not using HashSet.

@@ -17,7 +17,7 @@ public class Mountain {
         if(elements.length < 3) {
             return -1;
         }
-        // Mountain will have atleast 3 elements.
+        // Mountain will have at-least 3 elements.
         // Find peak of the mountain, then you can easily figure out length of the mountain.
         int longestMountain = Integer.MIN_VALUE;
         for(int i=1; i< elements.length - 1; ) {
