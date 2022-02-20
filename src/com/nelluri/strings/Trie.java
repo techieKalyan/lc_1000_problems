@@ -3,9 +3,9 @@ package com.nelluri.strings;
 public class Trie {
     private static final int CHAR_COUNT = 26;
 
-    private class Node {
-        boolean isLast;
-        Node[] childs;
+    public class Node {
+        public boolean isLast;
+        public Node[] childs;
 
         public Node(char c) {
             isLast = false;
@@ -16,7 +16,7 @@ public class Trie {
         }
     }
 
-    Node root;
+    public Node root;
 
     public Trie() {
         root = new Node(' ');

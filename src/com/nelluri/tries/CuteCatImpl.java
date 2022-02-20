@@ -4,6 +4,8 @@ package com.nelluri.tries;
 Interesting problem using Trie + Hash
 https://www.udemy.com/course/cpp-data-structures-algorithms-levelup-prateek-narang/learn/lecture/23510300#overview
  */
+import com.nelluri.strings.Trie;
+
 import java.util.Set;
 import java.util.HashSet;
 
