@@ -9,8 +9,6 @@ https://www.udemy.com/course/cpp-data-structures-algorithms-levelup-prateek-nara
  */
 
 
-import java.util.BitSet;
-
 class BinaryTrie {
     // Lets create a binary trie. If it has left child , it indicates 0 and we dont have to store any other data.
     // if it has right child, it indicates bit 1.

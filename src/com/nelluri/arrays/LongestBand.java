@@ -42,7 +42,7 @@ public class LongestBand {
                 i++;
                 continue;
             }
-            // check for length of the band startng with this element.
+            // check for length of the band starting with this element.
             int next = x + 1;
             int lengthOfBand = 1;
             while(hashSet.contains(next)) {

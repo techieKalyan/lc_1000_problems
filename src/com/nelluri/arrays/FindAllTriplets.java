@@ -29,7 +29,7 @@ public class FindAllTriplets {
     public List<Triplet<Integer>> findTriplets(int[] input, int target) {
         // assuming input array is sorted.
         int size = input.length;
-        int startIndex, endIndex = size-1;
+        int startIndex, endIndex;
         List<Triplet<Integer>> result = new ArrayList<>();
 
         for(int i=0; i < size; i++) {

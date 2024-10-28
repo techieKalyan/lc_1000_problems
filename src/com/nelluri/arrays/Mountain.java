@@ -6,7 +6,7 @@ return length of the longest mountain.
 
 e.g: [5,6,1,2,3,4,5,4,3,2,0,1,2,3,-2,4]
 
-length of longest mountain is 9 with peak at element 4
+length of longest mountain is 9 with peak at element 5
 (1,2,3,4,5,4,3,2,0)
 
 Prob here: https://www.udemy.com/course/cpp-data-structures-algorithms-levelup-prateek-narang/learn/lecture/24429144#overview

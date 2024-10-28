@@ -59,9 +59,22 @@ public class Tree {
         }
     }
 
+    public void printLeftView(Node root) {
+         if(root == null) {
+             return;
+         }
+        System.out.println(root.data);
+        if(root.left != null) {
+            printLeftView(root.left);
+        } else {
+            printLeftView(root.right);
+        }
+    }
+
     public static void main(String[] args) {
         Tree t = new Tree();
         Node root = t.createCompleteBT(new int[]{1,2,3,4,5,6,7,8,9,10}, 0);
+        t.printLeftView(root);
         t.displayTreeInPreOrder(root);
         System.out.println(t.search(root,11));
     }

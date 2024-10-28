@@ -7,7 +7,7 @@ public class Trie {
         public boolean isLast;
         public Node[] childs;
 
-        public Node(char c) {
+        public Node() {
             isLast = false;
             childs = new Node[CHAR_COUNT];
             for (Node node : childs) {
@@ -19,7 +19,7 @@ public class Trie {
     public Node root;
 
     public Trie() {
-        root = new Node(' ');
+        root = new Node();
     }
 
     public void addString(String input) {
@@ -31,7 +31,7 @@ public class Trie {
 
     public Node addString(Node curr, String input, int index) {
         if (curr == null) {
-            curr = new Node(' ');
+            curr = new Node();
         }
         if (index == input.length()) {
             curr.isLast = true;

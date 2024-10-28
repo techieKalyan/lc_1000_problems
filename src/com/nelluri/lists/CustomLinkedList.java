@@ -54,8 +54,7 @@ public class CustomLinkedList {
         while(curr != null) {
             if(curr.data == val) {
                 prev.next = curr.next;
-                curr = curr.next;
-                return true;
+                break;
             } else {
                 prev = prev.next;
                 curr = curr.next;
@@ -124,6 +123,35 @@ public class CustomLinkedList {
         head = prev;
 
     }
+
+    /*
+   "K" Reverses the linked list
+    */
+    public Node KreverseList(Node head, int k) {
+
+        // base condition
+        if(head == null) {
+            return null;
+        }
+
+        // reverse the "K" nodes.
+        Node curr, prev;
+        curr = head;
+        prev = null;
+        int ksize = 1;
+        while (curr != null && ksize <= k) {
+            Node next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+            ksize++;
+        }
+        // recursively reverse the rest of the list.
+        head.next = KreverseList(curr, k);
+
+        return prev;
+    }
+
     /*
     Prints the elements of the linked list.
      */
@@ -149,10 +177,12 @@ public class CustomLinkedList {
         customLinkedList.addTail(5);
         customLinkedList.addTail(6);
         customLinkedList.printList();
-        customLinkedList.removeOptimized(2);
-        customLinkedList.removeOptimized(6);
-        customLinkedList.printList();
-        customLinkedList.reverseList();
+//        customLinkedList.removeOptimized(2);
+//        customLinkedList.removeOptimized(6);
+//        customLinkedList.printList();
+//        customLinkedList.reverseList();
+//        customLinkedList.printList();
+        customLinkedList.head = customLinkedList.KreverseList(customLinkedList.head, 2);
         customLinkedList.printList();
     }
 
